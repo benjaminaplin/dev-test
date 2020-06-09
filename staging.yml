@@ -7,8 +7,6 @@ services:
       - "3000:3000"
     # pass the host env variable into the platform
     environment:
-      # - GH_TOKEN=$GH_TOKEN
-      # - EC_REPO_PATH=$EC_REPO_PATH
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=password
       - DB_HOST=db

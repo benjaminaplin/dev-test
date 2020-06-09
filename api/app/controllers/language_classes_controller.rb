@@ -6,6 +6,10 @@ class LanguageClassesController < ApplicationController
   # GET /language_classes.json
   def index
     @language_classes = LanguageClass.all
+    respond_to do |format|
+      format.json{ render json: {language_classes: @language_classes}, status: :ok}
+      format.html { render :index, status: :ok }
+    end
   end
 
   # GET /language_classes/1

@@ -83,7 +83,7 @@ test:
 #
 production:
   <<: *default
-  host: plant-finder-database-2.czg3s2hdax2l.us-west-2.rds.amazonaws.com
-  database: plant-finder-database-2
+  host: dev-test-database-1.cydr2t9zjvs2.us-west-2.rds.amazonaws.com
+  database: dev-test-database-1
   username: postgres
   password: password
