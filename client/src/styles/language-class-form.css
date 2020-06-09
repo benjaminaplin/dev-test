@@ -1,0 +1,33 @@
+.class-form_input-group-container {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.class-form_submit-button {
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
+  color: white;
+  border: none;
+  outline: none;
+  width: 97%;
+  background-color: var(--light-blue-bg);
+  display: flex;
+  justify-content: center;
+}
+
+/* .button-container {
+  display: flex;
+
+} */
+
+.form-input-container input {
+  margin: 1rem;
+  padding: 1rem;
+  width: 90%;
+}
+
+.input-error {
+  color: red;
+}

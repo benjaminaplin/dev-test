@@ -1,5 +1,6 @@
 @import "./styles/language-classes.css";
 @import "./styles/header.css";
+@import "./styles/language-class-form.css";
 
 :root {
   --border-color: #183d5a;

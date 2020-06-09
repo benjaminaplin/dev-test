@@ -6,7 +6,7 @@ WORKDIR /client
 
 COPY package.json /client/
 
-RUN npm install && npm install -g serve
+RUN npm install && npm install -g serve http 
 
 COPY . /client/
 

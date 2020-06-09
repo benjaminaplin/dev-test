@@ -1,16 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import ListClasses from './components/canopy-components/ListClasses'
-import Header from './components/ui/Header'
-
+import ListClasses from './pages/list-classes'
+import CreateClass from './pages/create-class'
+import LandingPage from './pages/LandingPage'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { createBrowserHistory } from "history";
+export const history = createBrowserHistory()
 function App() {
   console.log('hello from the React app!')
   return (
-    <div>
-      <Header />
-      <ListClasses />
-    </div>
+    <Router history={history}>
+      <Switch>
+        <Route path="/language-classes">
+          <ListClasses />
+        </Route>
+        <Route path="/create">
+          <CreateClass />
+        </Route>
+        <Route path="/">
+          <LandingPage />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
