@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Language Classes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>12 month price</th>
+      <th>Do creds</th>
+      <th>Pa creds</th>
+      <th>Cne creds</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @language_classes.each do |language_class| %>
+      <tr>
+        <td><%= language_class.name %></td>
+        <td><%= language_class.twelve_month_price %></td>
+        <td><%= language_class.do_creds %></td>
+        <td><%= language_class.pa_creds %></td>
+        <td><%= language_class.cne_creds %></td>
+        <td><%= link_to 'Show', language_class %></td>
+        <td><%= link_to 'Edit', edit_language_class_path(language_class) %></td>
+        <td><%= link_to 'Destroy', language_class, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Language class', new_language_class_path %>

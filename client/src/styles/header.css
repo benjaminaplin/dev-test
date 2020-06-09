@@ -1,0 +1,9 @@
+.header-container {
+  background-color: var(--light-blue-bg);
+  padding: 0.5rem 1rem;
+}
+
+.header-container img {
+  min-height: 40px;
+  max-height: 40px;
+}

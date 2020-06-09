@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @language_class.name %>
+</p>
+
+<p>
+  <strong>12 month price:</strong>
+  <%= @language_class.twelve_month_price %>
+</p>
+
+<p>
+  <strong>Do creds:</strong>
+  <%= @language_class.do_creds %>
+</p>
+
+<p>
+  <strong>Pa creds:</strong>
+  <%= @language_class.pa_creds %>
+</p>
+
+<p>
+  <strong>Cne creds:</strong>
+  <%= @language_class.cne_creds %>
+</p>
+
+<%= link_to 'Edit', edit_language_class_path(@language_class) %> |
+<%= link_to 'Back', language_classes_path %>

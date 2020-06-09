@@ -1,0 +1,7 @@
+@import "./styles/language-classes.css";
+@import "./styles/header.css";
+
+:root {
+  --border-color: #183d5a;
+  --light-blue-bg: #7ec2d3;
+}

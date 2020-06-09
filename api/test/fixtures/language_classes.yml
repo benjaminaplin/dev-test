@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  twelve_month_price: 1
+  do_creds: MyString
+  pa_creds: MyString
+  cne_creds: MyString
+
+two:
+  name: MyString
+  twelve_month_price: 1
+  do_creds: MyString
+  pa_creds: MyString
+  cne_creds: MyString

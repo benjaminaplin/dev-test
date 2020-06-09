@@ -1,0 +1,25 @@
+version: "3.6"
+services:
+  api:
+    # this is where we host the development platform image
+    image: dev_test
+    ports:
+      - "3000:3000"
+    # pass the host env variable into the platform
+    environment:
+      # - GH_TOKEN=$GH_TOKEN
+      # - EC_REPO_PATH=$EC_REPO_PATH
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - DB_HOST=db
+      - RAILS_ENV=production
+      - RAILS_LOG_TO_STDOUT=1
+      - SECRET_KEY_BASE=kdjfaeoiFDKJJK12AFDJFdifaiejfiee
+  client:
+    image: dev_test_client
+    environment:
+      - NODE_ENV=production
+    links:
+      - "api"
+    ports:
+      - "80:3001"
