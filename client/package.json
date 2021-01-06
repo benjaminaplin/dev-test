@@ -6,7 +6,7 @@
   "repository": "github:mannyhenri/react-docker",
   "homepage": "http://54.71.189.141/",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "formik": "^2.1.4",
     "path": "^0.12.7",
